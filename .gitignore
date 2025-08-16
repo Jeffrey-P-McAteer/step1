@@ -1,0 +1,25 @@
+/target
+*.blend?
+out
+bin
+build
+target
+obj
+/rootca
+rootca
+rootca/*
+
+dist
+dist/*
+
+pkg
+pkg/*
+
+# Windowsisms
+Thumbs.db
+Thumbs.db\:encryptable
+Thumbs.db*
+
+# Macisms
+.DS_Store
+._.DS_Store
