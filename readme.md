@@ -16,8 +16,8 @@ Design is in it's infancy; some notable requirements even at an early stage are:
     - We should be able to estimate the number of instructions servers need to answer queries knowing only query size and dataset size
     - This allows planners to make statements like "a 4ghz 1 CPU VM is capable of answering our org's process questions at a rate of 1,000 queries/second"
  - horizontal scalability
-    - In direct support of high performance, queries should be trivially shardable across multiple servers.
-    - For example,
+    - In direct support of high performance clients should be able to recieve and select from a set of N servers such that an organization can grow until a single server is filled with process data.
+    - No support for having >1 server's worth of storage to manage process data is planned - given that we are querying graphs, which are often even smaller than text, the whole planet's process data could be stored on a `1tb` drive.
 
 
 
